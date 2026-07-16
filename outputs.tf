@@ -1,4 +1,4 @@
-output "terraform_mcp_url" {
+output "api_terraform_mcp_url" {
   value = google_cloud_run_v2_service.apis["terraform"].uri
 }
 
