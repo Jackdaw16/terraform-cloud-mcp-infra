@@ -5,7 +5,7 @@ locals {
       bucket_name  = "terraform-mcp-api"
       env = {
         NODE_ENV     = "production"
-        PORT = var.terraform_mcp_api_port
+        # PORT = var.terraform_mcp_api_port
         TERRAFORM_API_BASE_URL = var.terraform_api_base_url
         TERRAFORM_API_TOKEN = var.terraform_api_token
         TERRAFORM_ORGANIZATION = var.terraform_organization
