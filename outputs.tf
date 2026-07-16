@@ -1,5 +1,5 @@
 output "terraform_mcp_url" {
-  value = google_cloud_run_v2_service.apis["terraform_mcp"].uri
+  value = google_cloud_run_v2_service.apis["terraform"].uri
 }
 
 output "artifact_registry_repository" {
