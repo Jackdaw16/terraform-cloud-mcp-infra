@@ -1,0 +1,23 @@
+project_name = "job-board"
+environment  = "showcase"
+domain       = "example.com"
+
+# Google Cloud
+gcp_project_id = "your-gcp-project-id"
+gcp_region     = "europe-southwest1"
+
+# Cloudflare
+cloudflare_account_id = "your-cloudflare-account-id"
+
+# Set this to true only if the domain DNS zone is delegated to Cloudflare.
+manage_cloudflare_dns = false
+cloudflare_zone_id    = null
+
+# Netlify
+netlify_team_id = "your-netlify-team-id"
+
+# Initial images. CI/CD should replace them later.
+container_image_companies = "us-docker.pkg.dev/cloudrun/container/hello"
+container_image_school    = "us-docker.pkg.dev/cloudrun/container/hello"
+
+cloud_run_max_instances = 1
