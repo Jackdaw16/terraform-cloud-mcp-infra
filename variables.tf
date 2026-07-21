@@ -46,7 +46,7 @@ variable "oauth_allowed_subjects" {
   type        = string
 }
 
-variable "terraform_api_token_secret_id" {
+variable "terraform_api_token" {
   type    = string
   default = "terraform-mcp-terraform-api-token"
 }
