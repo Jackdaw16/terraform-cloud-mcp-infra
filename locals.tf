@@ -8,6 +8,7 @@ locals {
         # PORT = var.terraform_mcp_api_port
         PUBLIC_BASE_URL = var.public_base_url
         TERRAFORM_API_BASE_URL = var.terraform_api_base_url
+        TERRAFORM_API_TOKEN = var.terraform_api_token_secret_id
         TERRAFORM_ORGANIZATION = var.terraform_organization
         TERRAFORM_ALLOWED_ORGANIZATIONS = var.terraform_allowed_organizations
         REQUEST_TIMEOUT_MS = var.request_timeouts_ms
@@ -19,17 +20,6 @@ locals {
         OAUTH_REQUIRED_SCOPES              = var.oauth_required_scopes
         OAUTH_ALLOWED_SUBJECTS             = var.oauth_allowed_subjects
       }
-
-      secret_env = merge(
-        {
-          TERRAFORM_API_TOKEN = var.terraform_api_token_secret_id
-        },
-        var.auth_api_key_enabled
-        ? {
-            MCP_API_KEY_SECRET = var.mcp_api_key_secret_id
-          }
-        : {}
-      )
     }
   }
 }
