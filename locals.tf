@@ -8,7 +8,7 @@ locals {
         # PORT = var.terraform_mcp_api_port
         PUBLIC_BASE_URL = var.public_base_url
         TERRAFORM_API_BASE_URL = var.terraform_api_base_url
-        TERRAFORM_API_TOKEN = var.terraform_api_token_secret_id
+        TERRAFORM_API_TOKEN = var.terraform_api_token
         TERRAFORM_ORGANIZATION = var.terraform_organization
         TERRAFORM_ALLOWED_ORGANIZATIONS = var.terraform_allowed_organizations
         REQUEST_TIMEOUT_MS = var.request_timeouts_ms
